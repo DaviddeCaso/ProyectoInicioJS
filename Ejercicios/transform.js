@@ -40,5 +40,16 @@ for (let i = 0; i < datos.length; i++) {
   }
 }
 
+// Funcion que recoge todos los proyectos y los guarda en un array para mostrarla
+const todosLosProyectos = [];
+for (let i = 0; i < datos.length; i++) {
+  const proyectos = datos[i].proyectos;
+  for (let j = 0; j < proyectos.length; j++) {
+    todosLosProyectos.push(proyectos[j].nombre);
+  }
+}
+
 console.log("Desarrolladores con habilidad JavaScript:");
 console.log(desarrolladoresJavascript);
+console.log("Nombres de los proyectos en los que se trabaja");
+console.log(todosLosProyectos);
